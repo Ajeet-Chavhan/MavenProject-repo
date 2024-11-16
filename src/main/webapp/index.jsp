@@ -1,6 +1,6 @@
 <html>
 <body>
 <h2><%= "Hello World!" %></h2>
-<h2><%= "Hello Wow!" %></h2>
+<h2><%= "Hello Wow" %></h2>
 </body>
 </html>
