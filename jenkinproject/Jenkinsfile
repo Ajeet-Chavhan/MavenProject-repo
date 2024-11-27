@@ -1,0 +1,25 @@
+pipeline {
+    agent any
+    
+    stages {
+        stage('Build') {
+            steps {
+                echo 'Building the project...'
+                // Your build commands here, like 'mvn clean install'
+            }
+        }
+        stage('Test') {
+            steps {
+                echo 'Running tests...'
+                // Your test commands here, like 'mvn test'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                echo 'Deploying to production...'
+                // Your deploy commands here
+            }
+        }
+    }
+}
+
