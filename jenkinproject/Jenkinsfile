@@ -6,17 +6,20 @@ pipeline {
             steps {
                 echo 'Building the project...'
                 // Your build commands here, like 'mvn clean install'
+                sh 'mvn compile'
             }
         }
         stage('Test') {
             steps {
                 echo 'Running tests...'
+                sh 'mvn test'
                 // Your test commands here, like 'mvn test'
             }
         }
         stage('Deploy') {
             steps {
                 echo 'Deploying to production...'
+                sh 'mvn clean package'
                 // Your deploy commands here
             }
         }
